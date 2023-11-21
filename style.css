@@ -63,8 +63,8 @@ h1 {
     height: 500px;
     border-radius: 5px;
     animation: gradientAnimation 5s infinite ;
-    background: linear-gradient(180deg, #8991a1, #2e2a2d, #ac4c4c);
-    background-size: 200% 200%;
+    background: linear-gradient(45deg, #8991a1, #2e2a2d, #ac4c4c, #8991a1, #2e2a2d, #ac4c4c);
+    background-size: 300% 300%;
     
 }
 
@@ -74,14 +74,14 @@ h1 {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    box-shadow: 5px 5px 15px rgba(black, 50%);
+    
     margin: 0 auto;
     padding: 5px;
     width: 380px;
     height: 480px;
-    border-radius: 5px;
+    border-radius: 7px;
     background-color: #2e2a2d;
-    backdrop-filter: blur(10px);
+    
 }
 
 .container {
@@ -91,13 +91,10 @@ h1 {
 
 .icon {
     width: 150px;
-    
-    animation: bounce 4s linear infinite;
+    animation: bounce 5s linear infinite;
 }
 
-.icon:hover {
-    transform: scale(110%);
-}
+
 
 .btn {
     border: solid 2.4px #8991a1;
@@ -114,6 +111,7 @@ h1 {
 }
 
 #user, #password {
+    font-size: 1em;
     padding: 5px;
     padding-left: 10px;
     outline: none;
@@ -124,6 +122,15 @@ h1 {
     width: 290px;
     height: 30px;
 }
+
+#checkbox {
+    transform: scale(115%);
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 .forgot {
     text-decoration: none;
@@ -138,10 +145,12 @@ h1 {
 .forgot-password {
     color: aliceblue;
     text-decoration: none;
+    transition: .2s;
 }
 
 .forgot-password:hover {
-    text-decoration: solid 2px aliceblue;
+    text-decoration: underline solid 2px rgba(255,255,255, 50%);
+    text-underline-offset: 2px;
 }
 
 .btn:hover {
