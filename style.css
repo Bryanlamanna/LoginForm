@@ -18,7 +18,7 @@ body {
 h1 {
     color: aliceblue;
     margin: 15px;
-    
+    margin-top: 0;
 }
 
 @keyframes bounce {
@@ -86,7 +86,8 @@ h1 {
 
 .container {
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    margin-top: 25px;
 }
 
 .icon {
@@ -110,10 +111,23 @@ h1 {
     
 }
 
+.campo {
+    color: #2e2a2d;    
+}
+
+.campo i {
+    position: absolute;
+    background-color: white;
+    height: 30px;
+    margin-top: 10px;
+    padding-left: 10px;
+   
+}
+
 #user, #password {
     font-size: 1em;
     padding: 5px;
-    padding-left: 10px;
+    padding-left: 35px;
     outline: none;
     border: none;
     border-radius: 10px;
@@ -121,6 +135,10 @@ h1 {
     margin-bottom: 20px;
     width: 290px;
     height: 30px;
+}
+
+#user:active + .campo i {
+    border-radius: 100%;
 }
 
 #checkbox {
@@ -156,10 +174,43 @@ h1 {
 .btn:hover {
     background-color: #ac4c4c;
     color: white;
+    border: white solid 2px;
     border-radius: 10px;
     transform: translate(-3px,-3px);
 }
 
 .btn:active {
     transform: scale(90%);
+}
+
+.plataformas {
+    color: white;
+  
+   
+}
+
+.btn-plataformas {
+    border: #8991a1 solid 2px;
+    color: #8991a1;
+    background-color: transparent;
+    margin-left: .5em;
+    margin-right: .5em;
+    margin-top: 15px;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    outline: none;
+    cursor: pointer;   
+    transition: .4s;
+}
+
+.btn-plataformas:hover {
+    background-color: #ac4c4c;
+    transform: translate(-3px,-3px);
+    color: white;
+    border: white solid 2px;
+}
+
+#icone {
+    font-size: 25px;
 }
